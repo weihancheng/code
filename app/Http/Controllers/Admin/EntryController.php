@@ -15,10 +15,10 @@ class EntryController extends Controller
 	public function login()
 	{
 		// 验证
-		$status = Auth::guard('admin')->attempt([
-			'username' => Request::input('username'),
-			'password' => Request::input('password'),
-		]);
-		dd($status);
+//		$status = Auth::guard('admin')->attempt([
+//			'username' => Request::input('username'),
+//			'password' => Request::input('password'),
+//		]);
+//		dd($status);
 	}
 }
