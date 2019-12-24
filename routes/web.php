@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +11,5 @@
 */
 
 Route::get('/', function () {
-	return view('welcome');
+	return "你好世界~";
 });
-
-include __DIR__ . '/admin/web.php';

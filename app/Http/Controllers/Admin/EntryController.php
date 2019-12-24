@@ -12,13 +12,13 @@ class EntryController extends Controller
 	/**
 	 * 登录接口
 	 */
-	public function login()
+	public function login(Request $request)
 	{
 		// 验证
-//		$status = Auth::guard('admin')->attempt([
-//			'username' => Request::input('username'),
-//			'password' => Request::input('password'),
-//		]);
-//		dd($status);
+		$status = Auth::guard('api')->attempt([
+			'username' => $request->input('username'),
+			'password' => $request->input('password'),
+		]);
+		dd($status);
 	}
 }
